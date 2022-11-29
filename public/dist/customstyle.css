@@ -8,3 +8,25 @@
 	width: 30%;
 	margin-top: 10%;
 }
+#timedate {
+  text-align:left;
+  width: 50%;
+  margin: 15px auto;
+  color:#fff;
+  border-left: 3px solid #ed1f24;
+  color: black;
+  margin-right: auto;
+  margin-left: -310px;
+}
+
+.tablelongtext {
+	display: inline-block;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.req-field:before {
+  content:" *";
+  color: red;
+}

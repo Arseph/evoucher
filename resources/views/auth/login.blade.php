@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('public/img/doh.png') }}">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <title>E-VOUCHER SYSTEM</title>
     <!-- Custom CSS -->
     <link href="{{ asset('public/dist/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('public/dist/customstyle.css') }}" rel="stylesheet">
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
-            style="background:url({{ asset('public/assets/images/big/auth-bg.jpg')}}) no-repeat center center;">
+            style="background:url({{ asset('public/img/auth-bg.jpg')}}) no-repeat center center;">
             <div class="auth-box row">
                 <div class="col-lg-7 col-md-5" style="background: white;">
                     <h2 class="customtitle">E-VOUCHER SYSTEM</h2>
@@ -41,7 +41,7 @@
                                 <div class="col-lg-12">
                                     <span class="help-block">
                                         @error('username')
-                                            <strong style="color: #A52A2A;">{{ $message }} sad</strong>
+                                            <strong style="color: #A52A2A;">{{ $message }}</strong>
                                         @enderror
                                     </span>
                                     <div class="form-group">

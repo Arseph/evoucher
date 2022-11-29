@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +16,8 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('voucher', 'HomeController@voucher');
+Route::match(['GET','POST'],'ae-voucher', 'VoucherCtlr@aeVoucher');
+Route::match(['GET','POST'],'sel-voucher', 'VoucherCtlr@selVoucher');
+Route::get('prevoucher', 'VoucherCtlr@prevoucher');
+Route::get('preob', 'VoucherCtlr@preob');

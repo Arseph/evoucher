@@ -25,4 +25,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function voucher(Request $req) {
+        return view('vouchers.home');
+    }
 }

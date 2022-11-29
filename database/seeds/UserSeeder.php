@@ -26,5 +26,20 @@ class UserSeeder extends Seeder
 			'level' => 'admin',
 			'void' => 0
         ]);
+        DB::table('supervisors')->insert([
+        	'name' => 'GODWIN LORD Y. GALLO, RN, MPH',
+			'position' => 'CHIEF ADMINISTRATIVE OFFICER',
+			'division' => 'MSD'
+        ]);
+        DB::table('supervisors')->insert([
+        	'name' => 'AMEBELLA G. TARUC, MD, MPM',
+			'position' => 'LHSD CHIEF MEDICAL OFFICER V',
+			'division' => 'LHSD'
+        ]);
+        DB::table('supervisors')->insert([
+        	'name' => 'FATIMA A. EMBAN, MD, MPH',
+			'position' => 'CHIEF-RLED',
+			'division' => 'RLED'
+        ]);
     }
 }
