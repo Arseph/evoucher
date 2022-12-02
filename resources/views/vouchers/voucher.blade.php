@@ -34,13 +34,13 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger d-none btnpreview" data-toggle="modal" data-target="#right-modal">Preview</button>
+                <button type="button" class="btn btn-danger d-none btnpreview">Preview</button>
                 <button type="submit" class="btn btn-primary btn-save d-none" form="">Save</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<div id="right-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+<div id="pre-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header border-0">
@@ -66,7 +66,6 @@
                     <div class="tab-pane show active" id="disvoucher">
                     </div>
                     <div class="tab-pane" id="oblivoucher">
-                        @include('vouchers.forms.oball')
                     </div>
                 </div>
             </div>

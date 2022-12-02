@@ -50,31 +50,61 @@ $('.vtypes').on('change', function() {
     });
 });
 $('.btnpreview').click(function() {
-    $.ajax({
-        url:  "{{ url('prevoucher') }}",
-        type: "GET",
-        data: {vtype: vtype},
-        success: function(data){
-            if (vtype != '13') {
-                $('#disvoucher').html(data)
-                $.ajax({
-                    url:  "{{ url('preob') }}",
-                    type: "GET",
-                    data: {vtype: vtype},
-                    success: function(data){
-                        if (vtype != '13') {
-                            $('#oblivoucher').html(data)
-                        }
-                    },
-                    error: function (data) {
-                        console.log(data)
-                    },
-                });
-            }
-        },
-        error: function (data) {
-            console.log(data)
-        },
+    var req;
+    var s_id = $( "#supervisor_id option:selected" ).val();
+    $("#allv_form").find('.required').each(function () {
+        if ($(this).val() == '') {
+            req = 'y';
+        }
     });
+    if(req) {
+        $.toast({
+            heading: 'Required',
+            text: 'Please fill out all required fields',
+            position: 'top-center'
+        })
+    } else if(s_id == '') {
+        $.toast({
+            heading: 'Required',
+            text: 'Please fill out all required fields',
+            position: 'top-center'
+        })
+    } else {
+        $.ajax({
+            url:  "{{ url('prevoucher') }}",
+            type: "GET",
+            data: {
+                vtype: vtype,
+                val: getFormData($('#allv_form')),
+                supervisor_id: $( "#supervisor_id option:selected" ).val()
+            },
+            success: function(data){
+                $('#pre-modal').modal('show');
+                if (vtype != '13') {
+                    $('#disvoucher').html(data)
+                    $.ajax({
+                        url:  "{{ url('preob') }}",
+                        type: "GET",
+                        data: {
+                            vtype: vtype,
+                            val: getFormData($('#allv_form')),
+                            supervisor_id: $( "#supervisor_id option:selected" ).val()
+                        },
+                        success: function(data){
+                            if (vtype != '13') {
+                                $('#oblivoucher').html(data)
+                            }
+                        },
+                        error: function (data) {
+                            console.log(data)
+                        },
+                    });
+                }
+            },
+            error: function (data) {
+                console.log(data)
+            },
+        });
+    }
 });
 </script>

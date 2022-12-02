@@ -30,7 +30,10 @@ class CreateVouchersTable extends Migration
             $table->string('acc_position');
             $table->string('agency_head');
             $table->string('agency_head_designation');
+            $table->string('office')->nullable();
+            $table->string('uacs')->nullable();
             $table->string('obligated');
+            $table->string('ob_position');
             $table->timestamps();
         });
     }

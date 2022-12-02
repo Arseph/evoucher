@@ -48,6 +48,7 @@
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right">
+                                                <button class="dropdown-item" type="button"><i class="fas fa-newspaper"></i>Preview</button>
                                                 <button class="dropdown-item" type="button"><i class="far fa-edit"></i>Edit</button>
                                                 <button class="dropdown-item" type="button"><i class="far fa-trash-alt"></i> Delete</button>
                                             </div>

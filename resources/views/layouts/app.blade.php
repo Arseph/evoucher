@@ -14,8 +14,9 @@
     <!-- This page plugin CSS -->
     <link href="{{ asset('public/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
+    <link href="{{ asset('public/dist/css/jquery.toast.min.css') }}" rel="stylesheet">
     <link href="{{ asset('public/dist/css/style.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/dist/customstyle.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/dist/css/customstyle.css') }}" rel="stylesheet">
     @yield('css')
 </head>
 
@@ -112,6 +113,7 @@
     <script src="{{ asset('public/assets/libs/jquery/dist/jquery.min.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous"></script>
     <script src="https://malsup.github.io/jquery.form.js"></script> 
+    <script src="{{ asset('public/dist/js/jquery.toast.min.js') }}"></script>
     <script src="{{ asset('public/assets/libs/jquery/dist/jquery-validate.js') }}"></script>
     <script src="{{ asset('public/assets/libs/jquery/dist/printThis.js') }}"></script>
     <!-- Bootstrap tether Core JavaScript -->

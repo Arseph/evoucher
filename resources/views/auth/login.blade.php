@@ -12,7 +12,7 @@
     <title>E-VOUCHER SYSTEM</title>
     <!-- Custom CSS -->
     <link href="{{ asset('public/dist/css/style.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/dist/customstyle.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/dist/css/customstyle.css') }}" rel="stylesheet">
 </head>
 
 <body>
