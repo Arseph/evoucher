@@ -15,9 +15,9 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@voucher')->name('home');
 Route::get('voucher', 'HomeController@voucher');
-Route::match(['GET','POST'],'ae-voucher', 'VoucherCtlr@aeVoucher');
+Route::post('ae-voucher', 'VoucherCtlr@aeVoucher');
 Route::match(['GET','POST'],'sel-voucher', 'VoucherCtlr@selVoucher');
 Route::get('prevoucher', 'VoucherCtlr@prevoucher');
 Route::get('preob', 'VoucherCtlr@preob');

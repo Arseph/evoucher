@@ -7,21 +7,6 @@ $.ajaxSetup({
     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
   }
 });
-$('#vtype_form').on('submit',function(e){
-    e.preventDefault();
-    console.log('ngi')
-    // $('#allv_form').ajaxSubmit({
-    //     url:  "{{ url('sel-voucher') }}",
-    //     type: "GET",
-    //     success: function(data){
-    //         $('.dvoutput').html(data)
-    //         $('#vouchertypemodal').modal('hide');
-    //     },
-    //     error: function (data) {
-    //         console.log(data)
-    //     },
-    // });
-});
 var prt = "pagealldv";
 var vtype;
 $('.prt').click(function() {
@@ -96,7 +81,12 @@ $('.btnpreview').click(function() {
                             }
                         },
                         error: function (data) {
-                            console.log(data)
+                            $.toast({
+                                heading: 'Error',
+                                text: 'Something went wrong, Please contact administrator',
+                                position: 'top-center',
+                                icon: 'error'
+                            })
                         },
                     });
                 }
@@ -106,5 +96,63 @@ $('.btnpreview').click(function() {
             },
         });
     }
+});
+$('.preview-dv-ob').click(function() {
+    var id = $(this).attr('data-id');
+    $.ajax({
+            url:  "{{ url('prevoucher') }}",
+            type: "GET",
+            data: {v_id: id},
+            success: function(data){
+                $('#pre-modal').modal('show');
+                $('#disvoucher').html(data)
+                $.ajax({
+                    url:  "{{ url('preob') }}",
+                    type: "GET",
+                    data: {v_id: id},
+                    success: function(data){
+                        $('#oblivoucher').html(data)
+                    },
+                    error: function (data) {
+                        $.toast({
+                            heading: 'Error',
+                            text: 'Something went wrong, Please contact administrator',
+                            position: 'top-center',
+                            icon: 'error'
+                        })
+                    },
+                });
+            },
+            error: function (data) {
+                console.log(data)
+            },
+        });
+});
+$('.edit-dv-ob').click(function() {
+    var id = $(this).attr('data-id');
+    vtype = $(this).attr('data-vtype-id');
+       $.ajax({
+            url:  "{{ url('sel-voucher') }}",
+            type: "GET",
+            data: {v_id: id},
+            success: function(data){
+                $('#vmodal').modal('show');
+                $('.inputvoucher').html(data)
+                $('.btnpreview').removeClass('d-none')
+                $('.btn-save').removeClass('d-none')
+                $('#vtype').val(vtype)
+                if(this.value != "13") {
+                    $('.btn-save').attr('form', 'allv_form')
+                }
+            },
+            error: function (data) {
+                $.toast({
+                    heading: 'Error',
+                    text: 'Something went wrong, Please contact administrator',
+                    position: 'top-center',
+                    icon: 'error'
+                })
+            },
+        });
 });
 </script>

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Voucher;
+use Auth;
 class HomeController extends Controller
 {
     /**
@@ -26,6 +27,10 @@ class HomeController extends Controller
         return view('home');
     }
     public function voucher(Request $req) {
-        return view('vouchers.home');
+        $user_id = Auth::user()->id;
+        $voucher = Voucher::where('user_id', $user_id)->get();
+        return view('vouchers.home',[
+            'vouchers' => $voucher
+        ]);
     }
 }

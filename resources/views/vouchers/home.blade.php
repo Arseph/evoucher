@@ -29,6 +29,7 @@
                         <table id="zero_config" class="table table-striped table-bordered no-wrap">
                             <thead>
                                 <tr>
+                                    <th>Voucher Type</th>
                                     <th>Payee</th>
                                     <th>Address</th>
                                     <th>Particulars</th>
@@ -37,24 +38,26 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($vouchers as $v)
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{{$v->v_type()}}</td>
+                                    <td>{{$v->payee}}</td>
+                                    <td>{{$v->address}}</td>
+                                    <td>{{$v->particulars}}</td>
+                                    <td>{{$v->amount}}</td>
                                     <td style="width: 5%;">
                                         <div class="btn-group">
                                             <button type="button" class="btn dropdown-toggle"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <button class="dropdown-item" type="button"><i class="fas fa-newspaper"></i>Preview</button>
-                                                <button class="dropdown-item" type="button"><i class="far fa-edit"></i>Edit</button>
-                                                <button class="dropdown-item" type="button"><i class="far fa-trash-alt"></i> Delete</button>
+                                                <button class="dropdown-item preview-dv-ob" type="button" data-id="{{$v->id}}"><i class="fas fa-newspaper"></i>Preview</button>
+                                                <button class="dropdown-item edit-dv-ob" type="button" data-id="{{$v->id}}" data-vtype-id="{{$v->vtype}}"><i class="far fa-edit"></i>Edit</button>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

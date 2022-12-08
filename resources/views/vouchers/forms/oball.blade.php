@@ -38,9 +38,6 @@
 <span class="text" style="left:41.9px;top:285.1px;">Add</span>
 <span class="text" style="left:68.6px;top:285.1px;">ress</span>
 </span>
-<span style="font-size:16px;font-family:&#39;Times New Roman&#39;;">
-<span class="text" style="left:217.1px;top:292.1px;">office_address</span>
-</span>
 <span style="font-size:14px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
 <span class="text" style="left:54.3px;top:313.6px;">R</span>
 <span class="text" style="left:64.2px;top:313.6px;">esponsibility</span>
@@ -88,12 +85,6 @@
 <span style="font-size:15px;font-family:&#39;Times New Roman&#39;;">
 <span class="text" style="left:41.9px;top:253.7px;">Office</span>
 </span>
-<span style="font-size:16px;font-family:&#39;Times New Roman&#39;;">
-<span class="text" style="left:217.1px;top:258.2px;">office_office</span>
-</span>
-<span style="font-size:23px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
-<span class="text" style="left:838.3px;top:575.1px;">000,000,000.00</span>
-</span>
 <span style="font-size:24px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
 <span class="text" style="left:547.4px;top:608.6px;">B.</span>
 </span>
@@ -120,18 +111,6 @@
 <span class="text" style="left:534.0px;top:752.5px;">Signature</span>
 <span class="text" style="left:628.6px;top:752.5px;">:</span>
 </span>
-<span style="font-size:16px;font-family:&#39;Times New Roman&#39;;">
-<span class="text" style="left:58.4px;top:371.6px;">r</span>
-<span class="text" style="left:63.8px;top:371.6px;">esponsibility_center</span>
-</span>
-<span style="font-size:15px;font-family:&#39;Times New Roman&#39;;">
-<span class="text" style="left:238.0px;top:371.6px;">To obligate cost o</span>
-<span class="text" style="left:349.6px;top:371.6px;">f</span>
-<span class="text" style="left:358.5px;top:371.6px;">payment for Van Rental</span>
-</span>
-<span style="font-size:18px;font-family:&#39;Times New Roman&#39;;">
-<span class="text" style="left:870.2px;top:371.4px;">000,000,000.00</span>
-</span>
 <span style="font-size:24px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
 <span class="text" style="left:43.0px;top:923.2px;">C.</span>
 </span>
@@ -155,9 +134,6 @@
 <span class="text" style="left:64.2px;top:870.5px;">e</span>
 <span class="text" style="left:133.5px;top:870.5px;">:</span>
 </span>
-<span style="font-size:13px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
-<span class="text" style="left:235.3px;top:784.7px;">AMEBELLA_G._TAR</span>
-</span>
 <span style="font-size:15px;font-family:&#39;Times New Roman&#39;;">
 <span class="text" style="left:534.0px;top:792.0px;">Printer Name</span>
 <span class="text" style="left:628.7px;top:792.0px;">:</span>
@@ -165,16 +141,6 @@
 <span class="text" style="left:632.2px;top:831.2px;">:</span>
 <span class="text" style="left:534.0px;top:870.5px;">Date</span>
 <span class="text" style="left:625.6px;top:870.5px;">:</span>
-</span>
-<span style="font-size:13px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
-<span class="text" style="left:713.9px;top:784.7px;">CRISTY LORRAINE E. DI</span>
-<span class="text" style="left:868.9px;top:784.7px;">AZON, CPA</span>
-</span>
-<span style="font-size:15px;font-family:&#39;Times New Roman&#39;;">
-<span class="text" style="left:223.5px;top:823.2px;">LHSD CHIEF/MEDIC</span>
-<span class="text" style="left:358.1px;top:823.2px;">AL OFFICER V</span>
-<span class="text" style="left:697.4px;top:823.2px;">Administrative Officer V/Bud</span>
-<span class="text" style="left:873.8px;top:823.2px;">get Officer III</span>
 </span>
 <span style="font-size:14px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
 <span class="text" style="left:846.7px;top:974.0px;">Bala</span>
@@ -205,6 +171,34 @@
 </span>
 <span style="font-size:15px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
 <span class="text" style="left:217.1px;top:223.8px;width: 766px;text-align: left;">{{$payee}}</span>
+</span>
+<span style="font-size:16px;font-family:&#39;Times New Roman&#39;;">
+<span class="text" style="left:217.1px;top:258.2px; width: 766px;text-align: left;">{{$office}}</span>
+</span>
+<span style="font-size:16px;font-family:&#39;Times New Roman&#39;;">
+<span class="text" style="left:217.1px;top:292.1px; width: 766px;text-align: left;">{{$address}}</span>
+</span>
+<span class="text" style="left:40.8px;top:371.6px;width: 172px;text-align: center; white-space: normal;">{{$response_center}}</span>
+<span style="font-size:15px;font-family:&#39;Times New Roman&#39;;">
+<span class="text" style="left: 215px;top: 371.6px;width: 315px;white-space: normal;">{{$particulars}}</span>
+<span class="text" style="left: 532px;top: 371.6px;width: 134px;white-space: normal;">{{$mfo_pap}}</span>
+<span class="text" style="left: 669px;top: 371.6px;width: 153px;white-space: normal;">{{$uacs}}</span>
+</span>
+<span style="font-size:18px;font-family:&#39;Times New Roman&#39;;">
+<span class="text" style="left:824.2px;top:371.4px; text-align: right;direction: rtl; width: 159px;">{{$amount}}</span>
+</span>
+<span style="font-size:23px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
+<span class="text" style="left:824.3px;top:575.1px; text-align: right;direction: rtl; width: 159px;">{{$amount}}</span>
+</span>
+<span style="font-size:13px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
+<span class="text" style="left:170.3px;top:784.7px;width: 340px;text-align: center;direction: ltr;">{{$s_name}}</span>
+</span>
+<span style="font-size:15px;font-family:&#39;Times New Roman&#39;;">
+<span class="text" style="left:170.5px;top:823.2px;width: 340px;text-align: center;direction: ltr;">{{$s_position}}</span>
+<span class="text" style="left:668.4px;top:823.2px;width: 315px;text-align: center;direction: ltr;">{{$ob_position}}</span>
+</span>
+<span style="font-size:13px;font-family:&#39;Times New Roman&#39;;font-weight:bold;">
+<span class="text" style="left:667.9px;top:784.7px;width: 315px;text-align: center;direction: ltr;">{{$obligated}}</span>
 </span>
 <div class="vector" style="left:38.0px;top:137.0px;"><img width="949" height="1108" src="data:image/webp;base64,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+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkPfbJyHvtk5D32ych77ZOQ99snIe+2TkN4AD+/94IqA9wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="></div>
 
